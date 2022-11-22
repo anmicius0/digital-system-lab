@@ -1,5 +1,6 @@
 module matrix_display (status, ani_clk, dot_row, dot_col);
-    input ani_clk, [1:0]status;
+    input ani_clk; 
+    input [1:0] status;
     output [7:0] dot_row, dot_col;
 
     reg [7:0] dot_row, dot_col;

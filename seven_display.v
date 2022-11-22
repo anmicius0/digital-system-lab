@@ -1,4 +1,4 @@
-module sevendisplay(value, out);
+module seven_display(value, out);
     input [3:0]value;
     output [7:0]out;
     reg [7:0]out;

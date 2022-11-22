@@ -1,8 +1,10 @@
 module state(div_clk, reset, status, value);
     input div_clk, reset;
-    output [1:0]status, [3:0]value;
+    output [1:0] status; 
+    output [3:0]value;
     
-    reg [1:0] status, [3:0]value;
+    reg [1:0] status;
+    reg [3:0] value;
     parameter GREEN = 2'd0,
               YELLO = 2'd1,
               RED = 2'd2;
@@ -11,7 +13,7 @@ module state(div_clk, reset, status, value);
     begin
         if(!reset)
             status <= GREEN;
-            value <= 4'd0;
+            value <= 4'd15;
         else
         begin
             if(value == 0)
@@ -35,7 +37,7 @@ module state(div_clk, reset, status, value);
                 endcase
             end        
             else
-                status <= status - 1;
+                value <= value - 1;
         end
     end
 
