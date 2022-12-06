@@ -1,5 +1,5 @@
-// 1 HZ
-`define TimeExpire 32'd25000000
+// 100 HZ
+`define TimeExpire 32'd250000
 
 module clk_div(clk, div_clk);
     input clk;

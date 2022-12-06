@@ -18,7 +18,7 @@ module seven_display(value, out);
             4'd9: out = 7'b0010000;
             4'd10: out = 7'b0001000;
             4'd11: out = 7'b0000011;
-            4'd12: out = 7'b1110000;
+            4'd12: out = 7'b1000110;
             4'd13: out = 7'b0100001;
             4'd14: out = 7'b0000110;
             4'd15: out = 7'b0001110;
