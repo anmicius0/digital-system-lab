@@ -1,4 +1,4 @@
-module vertical_counter(div_clk, )
+module vertical_counter(div_clk, enable_v_counter, v_counter);
     input div_clk, enable_v_counter;
     output reg [10:0] v_counter;
 

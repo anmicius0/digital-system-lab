@@ -1,4 +1,4 @@
-module horizontal_counter(div_clk, h_counter, enable_v_counter)
+module horizontal_counter(div_clk, h_counter, enable_v_counter);
     input div_clk;
     output reg [10:0] h_counter;
     output reg enable_v_counter;
